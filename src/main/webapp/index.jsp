@@ -1,15 +1,28 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<!--<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>-->
 <html>
     <head>
-    <meta content="text/html; charset=utf-8">
-    <title>test</title>
+        <meta charset="utf-8" />
+        <title>注册</title>
+        <link rel="stylesheet" href="css/base.css" />
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
     </head>
 <body>
-<form action="addUser" method="post">
-<hl2>注册界面</h2>
-<span>账号：</span><input name="userName"/><br>
-<span>密码：</span><input name="userPwd"/><br>
-<input type="submit" value="提交">
-</form>
+	<nav class="navbar">
+		<div class="width-limit">
+		  	<div class="log"><a href="#"><img class="f_left" src="img/logo.png" />博客</a></div>  
+			<div class="navbar-a">
+				<a>登录</a>
+				<a>注册</a>
+				<a>写文章</a>
+			</div>
+			<div class="navbar-nav">
+				<ul class="navlist">
+					<li><a href="index.jsp">首页</a></li>
+					<li><a href="index.jsp">笔记</a></li>
+					<li><input value="serch"/>serch</li>
+				</ul>			
+			</div>
+		</div>	
+	</nav>
 </body>
 </html>

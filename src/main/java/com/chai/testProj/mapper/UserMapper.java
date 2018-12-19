@@ -11,7 +11,8 @@ import java.util.List;
 @Repository
 public interface UserMapper {
 
-    @Insert("INSERT INTO user(user_id,user_name,user_pwd) VALUES(#{userId},#{userName},#{userPwd})")
+    @Insert("INSERT INTO user(user_id,user_name,user_pwd,user_email,user_phone,create_date,update_date,is_delete)" +
+            " VALUES(#{userId},#{userName},#{userPwd},#{userEmail},#{userPhone},#{createDate},#{updateDate},'0')")
     int addUser(UserDao userDao);
 
     @Select("SELECT user_id as userId FROM user WHERE is_delete='0'")

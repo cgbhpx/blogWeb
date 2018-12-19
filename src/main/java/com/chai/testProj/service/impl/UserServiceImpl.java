@@ -19,6 +19,7 @@ public class UserServiceImpl implements UserService {
         CreateId createId = new CreateId();
         userDao.setUserId(Integer.parseInt(createId.getUUID()));
         userDao.setCreateData(new Date());
+        userDao.setUpdateDate(new Date());
         return userMapper.addUser(userDao);
     }
 

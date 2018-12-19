@@ -22,6 +22,7 @@ public class BlogController {
         return "200";
     }
 
+
     @RequestMapping(value ="/queryBlog",method = RequestMethod.POST)
     public List queryBlog(){
         return blogService.queryBlog();

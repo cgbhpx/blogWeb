@@ -8,7 +8,7 @@ public class UserDao {
     private String userPwd;
     private String userEmail;
     private String userPhone;
-    private Date createData;
+    private Date createDate;
     private Date updateDate;
     private String isDelete;
 
@@ -53,11 +53,11 @@ public class UserDao {
     }
 
     public Date getCreateData() {
-        return createData;
+        return createDate;
     }
 
     public void setCreateData(Date createData) {
-        this.createData = createData;
+        this.createDate = createData;
     }
 
     public Date getUpdateDate() {

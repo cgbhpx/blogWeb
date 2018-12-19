@@ -12,11 +12,17 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @RequestMapping(value = "")
+    public String hello(){
+        return "hello world";
+    }
     @RequestMapping(value = "/addUser",method = RequestMethod.POST)
     public String addUser(@Valid UserDao userDao){
-        userDao.setUserName(userDao.getUserName());
+        userDao.setUserEmail(userDao.getUserEmail());
+        userDao.setUserName(userDao.getUserEmail());
         userDao.setUserPwd(userDao.getUserPwd());
-        int result = userService.addUser(userDao);
+        userDao.setUserPhone(userDao.getUserPhone());
+        userService.addUser(userDao);
         return "200";
     }
 
